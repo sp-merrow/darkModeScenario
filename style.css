@@ -1,0 +1,9 @@
+.brightBody {background-color: lightblue;}
+
+.darkBody {background-color: black;}
+
+.list {
+	list-style-type: square;
+	font-size: 15px;
+	font-weight: bold;
+	}
