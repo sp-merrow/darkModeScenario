@@ -3,29 +3,37 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style.css">
+		<link id="theme" rel="stylesheet" href="lightStyle.css">
 		<title>Dark Mode Test</title>
 	</head>
-	<body class="brightBody">
-	<h1>Product Company</h1>
-	<h2>We make stuff!</h2>
+	<body class="bodyStyle">
+	<h1 class="text">Product Company</h1>
+	<h2 class="text">We make stuff!</h2>
 	<br>
 	<br>
-	<p>To do list:</p>
+	<p class="text">To do list:</p>
 	<ul class="list">
 		<li>Add style</li>
 		<li>Add dark theme</li>
 		<li>Let users choose dark or light theme</li>
 	</ul>
 	
-	<button onclick="changeMode()">Click this!</button>
+	<button onclick="changeMode()">Click here to change themes!</button>
 
 	<script>
+		let theme = document.getElementById("theme");
 		let darkMode = false;
 
 		function changeMode() {
 			darkMode = !darkMode;
-				}
+			if (darkMode) {
+				theme.setAttribute('href', 'darkStyle.css');
+			}
+
+			else {
+				theme.setAttribute('href', 'lightStyle.css');
+			}
+			}
 	</script>
 	</body>
 </html>

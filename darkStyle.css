@@ -1,0 +1,12 @@
+.bodyStyle {background-color: rgb(31, 31, 96)}
+
+.list {
+	list-style-type: square;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+}
+
+.text {
+	color: white;
+}
